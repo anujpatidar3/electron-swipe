@@ -8,7 +8,7 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-zip',
-      platforms: ['darwin', "linux", "windows", "macOS"],
+      platforms: ['darwin']
     },
     {
       name: '@electron-forge/maker-deb',
@@ -18,12 +18,13 @@ module.exports = {
       name: '@electron-forge/maker-rpm',
       config: {},
     },
-    {
-      name: '@electron-forge/maker-dmg',
-      config: {
-        background: './assets/dmg-background.png',
-        format: 'ULFO'
-      }
-    }
+    // For macbook
+    // {
+    //   name: '@electron-forge/maker-dmg',
+    //   config: {
+    //     background: './assets/dmg-background.png',
+    //     format: 'ULFO'
+    //   }
+    // }
   ],
 };
